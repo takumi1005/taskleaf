@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: taskleaf_production
-  username: taskleaf
-  password: <%= ENV['taskleaf_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5

@@ -9,6 +9,6 @@ class ApplicationController < ActionController::Base
   end
 
   def login_required
-    redirect_to login_url unless current_user
+    redirect_to new_admin_user_path unless current_user
   end
 end

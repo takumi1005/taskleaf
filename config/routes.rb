@@ -7,6 +7,6 @@ Rails.application.routes.draw do
     resources :users
   end
   
-  root to: 'tasks#index'
+  root to: 'admin#user'
   resources :tasks
 end
